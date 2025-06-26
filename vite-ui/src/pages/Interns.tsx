@@ -16,15 +16,13 @@ const Interns = () => {
   const interns = [
     {
       id: 1,
-      name: "Nina Patel",
       title: "Computer Science Student",
       university: "Chulalongkorn University",
       location: "Bangkok, Thailand",
-      reviewCount: 12,
       availability: "Part-time",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=150&h=150&fit=crop&crop=face",
       skills: ["Python", "React", "JavaScript", "Git"],
-      sbtCount: 3,
+      polCount: 1,
+      powCount: 4,
       description: "Third-year CS student with strong programming fundamentals. Completed several academic projects and looking for hands-on industry experience.",
       verifiedSkills: ["Python Programming", "Web Development"],
       year: "3rd Year",
@@ -33,15 +31,13 @@ const Interns = () => {
     },
     {
       id: 2,
-      name: "Carlos Martinez",
       title: "Software Engineering Student",
       university: "Universidad Nacional Autónoma de México",
       location: "Mexico City, Mexico",
-      reviewCount: 8,
       availability: "Full-time",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       skills: ["Java", "Spring Boot", "MySQL", "Docker"],
-      sbtCount: 4,
+      polCount: 2,
+      powCount: 1,
       description: "Final year software engineering student with experience in full-stack development. Passionate about learning new technologies and contributing to real projects.",
       verifiedSkills: ["Java Development", "Database Design"],
       year: "4th Year",
@@ -50,15 +46,13 @@ const Interns = () => {
     },
     {
       id: 3,
-      name: "Aisha Hassan",
       title: "Data Science Student",
       university: "Cairo University",
       location: "Cairo, Egypt",
-      reviewCount: 15,
       availability: "Part-time",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
       skills: ["Python", "R", "Machine Learning", "Statistics"],
-      sbtCount: 5,
+      polCount: 1,
+      powCount: 0,
       description: "Data science student with strong analytical skills. Completed multiple data analysis projects and eager to apply machine learning in real-world scenarios.",
       verifiedSkills: ["Data Analysis", "Statistical Modeling"],
       year: "3rd Year",
@@ -67,15 +61,13 @@ const Interns = () => {
     },
     {
       id: 4,
-      name: "Li Wei",
       title: "Computer Engineering Student",
       university: "National University of Singapore",
       location: "Singapore",
-      reviewCount: 10,
       availability: "Full-time",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       skills: ["C++", "Python", "Embedded Systems", "IoT"],
-      sbtCount: 4,
+      polCount: 1,
+      powCount: 2,
       description: "Computer engineering student specializing in embedded systems and IoT. Built several hardware-software integration projects during coursework.",
       verifiedSkills: ["Embedded Programming", "Hardware Design"],
       year: "4th Year",
@@ -159,18 +151,12 @@ const Interns = () => {
                 {/* Profile Header */}
                 <div className="flex items-start space-x-4 mb-4">
                   <div className="relative">
-                    <img
-                      src={intern.avatar}
-                      alt={intern.name}
-                      className="w-16 h-16 rounded-full object-cover"
-                    />
                     <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
                       <GraduationCap className="w-3 h-3 text-white" />
                     </div>
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between mb-1">
-                      <h3 className="font-semibold text-gray-900 text-lg">{intern.name}</h3>
                       <div className={`px-2 py-1 rounded-full text-xs font-medium ${
                         intern.availability === 'Full-time' 
                           ? 'bg-green-100 text-green-800' 
@@ -190,15 +176,19 @@ const Interns = () => {
 
                 {/* Stats Row */}
                 <div className="grid grid-cols-3 gap-4 mb-4 text-center">
-                  <div>
-                    <p className="text-xs text-gray-500">{intern.reviewCount} reviews</p>
+                <div>
+                    <div className="flex items-center justify-center space-x-1 mb-1">
+                      <Shield className="w-4 h-4 text-gray-400" />
+                      <span className="font-medium text-sm text-gray-400">{intern.polCount}</span>
+                    </div>
+                    <p className="text-xs text-gray-500">POL</p>
                   </div>
                   <div>
                     <div className="flex items-center justify-center space-x-1 mb-1">
-                      <Shield className="w-4 h-4 text-blue-600" />
-                      <span className="font-medium text-sm text-blue-600">{intern.sbtCount}</span>
+                      <Shield className="w-4 h-4 text-yellow-400" />
+                      <span className="font-medium text-sm text-yellow-400">{intern.powCount}</span>
                     </div>
-                    <p className="text-xs text-gray-500">SBTs</p>
+                    <p className="text-xs text-gray-500">POW</p>
                   </div>
                   <div>
                     <div className="flex items-center justify-center space-x-1 mb-1">
