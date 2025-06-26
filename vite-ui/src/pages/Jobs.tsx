@@ -23,7 +23,6 @@ const Jobs = () => {
       budget: "$2,500 - $4,000",
       duration: "2-3 months",
       skills: ["React", "TypeScript", "Tailwind CSS"],
-      rating: 4.9,
       description: "Looking for a skilled React developer to build a modern dashboard application with real-time features. The project involves creating a comprehensive admin panel with data visualization, user management, and reporting capabilities.",
       postedTime: "2 hours ago",
       proposals: 5,
@@ -37,7 +36,6 @@ const Jobs = () => {
       budget: "$3,000 - $5,500",
       duration: "1-2 months",
       skills: ["Solidity", "Web3.js", "Ethereum"],
-      rating: 4.8,
       description: "Seeking an experienced blockchain developer to create DeFi smart contracts with security best practices. Must have experience with testing frameworks and gas optimization.",
       postedTime: "5 hours ago",
       proposals: 12,
@@ -51,7 +49,6 @@ const Jobs = () => {
       budget: "$2,000 - $3,500",
       duration: "3-4 months",
       skills: ["Python", "Django", "PostgreSQL"],
-      rating: 4.7,
       description: "Building a data analytics platform with Python backend and modern frontend integration. Experience with data processing and API development required.",
       postedTime: "1 day ago",
       proposals: 8,
@@ -149,10 +146,7 @@ const Jobs = () => {
                         <MapPin className="w-3 h-3" />
                         <span>{job.location}</span>
                       </div>
-                      <div className="flex items-center space-x-1">
-                        <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
-                        <span>{job.rating}</span>
-                      </div>
+                      
                     </div>
                   </div>
                   <Button variant="ghost" size="sm">

@@ -171,8 +171,8 @@ const Freelancers = () => {
                   </div>
                   <div>
                     <div className="flex items-center justify-center space-x-1 mb-1">
-                      <Shield className="w-4 h-4 text-blue-600" />
-                      <span className="font-medium text-sm text-blue-600">{freelancer.poeCount}</span>
+                      <Shield className="w-4 h-4 text-yellow-400" />
+                      <span className="font-medium text-sm text-yellow-400">{freelancer.poeCount}</span>
                     </div>
                     <p className="text-xs text-gray-500">POW</p>
                   </div>
