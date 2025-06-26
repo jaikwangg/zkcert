@@ -25,11 +25,11 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/jobs" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors">
               <Briefcase className="w-4 h-4" />
-              <span>Find Work</span>
+              <span>Gradpad</span>
             </Link>
             <Link to="/freelancers" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors">
               <User className="w-4 h-4" />
-              <span>Find Talent</span>
+              <span>Gradpad</span>
             </Link>
             <Link to="/how-it-works" className="text-gray-700 hover:text-blue-600 transition-colors">
               How It Works
@@ -65,11 +65,11 @@ const Navigation = () => {
             <div className="flex flex-col space-y-4">
               <Link to="/jobs" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
                 <Briefcase className="w-4 h-4" />
-                <span>Find Work</span>
+                <span>Gradpad</span>
               </Link>
               <Link to="/freelancers" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
                 <User className="w-4 h-4" />
-                <span>Find Talent</span>
+                <span>Gradpad</span>
               </Link>
               <Link to="/how-it-works" className="text-gray-700 hover:text-blue-600 transition-colors">
                 How It Works
