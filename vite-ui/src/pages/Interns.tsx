@@ -278,7 +278,6 @@ const Interns = () => {
           </Button>
         </div>
       </div>
-
       <Footer />
     </div>
   );

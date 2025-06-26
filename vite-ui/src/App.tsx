@@ -12,8 +12,8 @@ import HowItWorks from "./pages/HowItWorks";
 import About from "./pages/About";
 import Dashboard from "./pages/Dashboard";
 import Course from "./pages/Course";
+import Interns from "./pages/Interns";
 import NotFound from "./pages/NotFound";
-import Interns from "./pages/interns";
 
 const queryClient = new QueryClient();
 
