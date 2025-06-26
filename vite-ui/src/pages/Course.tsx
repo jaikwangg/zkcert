@@ -20,7 +20,6 @@ const Course = () => {
       id: 1,
       title: "Complete React Development Bootcamp",
       instructor: "John Smith",
-      instructorAvatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       category: "Web Development",
       level: "Beginner to Advanced",
       rating: 4.9,
@@ -39,7 +38,6 @@ const Course = () => {
       id: 2,
       title: "Python for Data Science & Machine Learning",
       instructor: "Dr. Sarah Johnson",
-      instructorAvatar: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=150&h=150&fit=crop&crop=face",
       category: "Data Science",
       level: "Intermediate",
       rating: 4.8,
@@ -58,7 +56,6 @@ const Course = () => {
       id: 3,
       title: "Blockchain Development Fundamentals",
       instructor: "Alex Chen",
-      instructorAvatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       category: "Blockchain",
       level: "Advanced",
       rating: 4.7,
@@ -77,7 +74,6 @@ const Course = () => {
       id: 4,
       title: "UI/UX Design Masterclass",
       instructor: "Maria Rodriguez",
-      instructorAvatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
       category: "Design",
       level: "Beginner",
       rating: 4.9,
@@ -227,11 +223,6 @@ const Course = () => {
 
                     {/* Instructor */}
                     <div className="flex items-center space-x-2 mb-4">
-                      <img
-                        src={course.instructorAvatar}
-                        alt={course.instructor}
-                        className="w-8 h-8 rounded-full object-cover"
-                      />
                       <span className="text-sm text-gray-700">{course.instructor}</span>
                     </div>
 
