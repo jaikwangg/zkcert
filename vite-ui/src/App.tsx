@@ -10,10 +10,10 @@ import Jobs from "./pages/Jobs";
 import Freelancers from "./pages/Freelancers";
 import HowItWorks from "./pages/HowItWorks";
 import About from "./pages/About";
-import Dashboard from './pages/Dashboard';
-import Courses from './pages/Courses';
-import Interns from './pages/Interns';
+import Dashboard from "./pages/Dashboard";
+import Course from "./pages/Course";
 import NotFound from "./pages/NotFound";
+import Interns from "./pages/interns";
 
 const queryClient = new QueryClient();
 
@@ -28,7 +28,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/jobs" element={<Jobs />} />
             <Route path="/freelancers" element={<Freelancers />} />
-            <Route path="/courses" element={<Courses />} />
+            <Route path="/course" element={<Course />} />
             <Route path="/interns" element={<Interns />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/about" element={<About />} />
