@@ -56,48 +56,6 @@ const Jobs = () => {
       postedTime: "1 day ago",
       proposals: 8,
       featured: false
-    },
-    {
-      id: 4,
-      title: "Mobile App Developer",
-      company: "StartupHub",
-      location: "Remote",
-      budget: "$1,800 - $3,000",
-      duration: "2-3 months",
-      skills: ["React Native", "JavaScript", "Firebase"],
-      rating: 4.6,
-      description: "Develop a cross-platform mobile application for task management with real-time synchronization and offline capabilities.",
-      postedTime: "2 days ago",
-      proposals: 15,
-      featured: false
-    },
-    {
-      id: 5,
-      title: "DevOps Engineer",
-      company: "CloudTech",
-      location: "Remote",
-      budget: "$3,500 - $5,000",
-      duration: "1-2 months",
-      skills: ["AWS", "Docker", "Kubernetes"],
-      rating: 4.9,
-      description: "Set up CI/CD pipelines and infrastructure automation for a growing SaaS platform. Experience with monitoring and scaling required.",
-      postedTime: "3 days ago",
-      proposals: 7,
-      featured: false
-    },
-    {
-      id: 6,
-      title: "UI/UX Designer",
-      company: "DesignStudio",
-      location: "Remote",
-      budget: "$1,500 - $2,500",
-      duration: "1-2 months",
-      skills: ["Figma", "Prototyping", "User Research"],
-      rating: 4.8,
-      description: "Design a complete user interface and experience for a fintech application. Must include user research, wireframing, and high-fidelity prototypes.",
-      postedTime: "4 days ago",
-      proposals: 22,
-      featured: false
     }
   ];
 

@@ -20,7 +20,6 @@ const Freelancers = () => {
       name: "Alex Thompson",
       title: "Full Stack Developer",
       location: "Bangkok, Thailand",
-      rating: 4.9,
       reviewCount: 23,
       hourlyRate: "$25/hr",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
@@ -38,7 +37,6 @@ const Freelancers = () => {
       name: "Maria Rodriguez",
       title: "UI/UX Designer & Frontend Dev",
       location: "Mexico City, Mexico",
-      rating: 4.8,
       reviewCount: 18,
       hourlyRate: "$22/hr",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=150&h=150&fit=crop&crop=face",
@@ -56,7 +54,6 @@ const Freelancers = () => {
       name: "David Chen",
       title: "Blockchain Developer",
       location: "Singapore",
-      rating: 5.0,
       reviewCount: 12,
       hourlyRate: "$35/hr",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
@@ -68,60 +65,6 @@ const Freelancers = () => {
       responseTime: "4 hours",
       availability: "Busy",
       languages: ["English", "Mandarin"]
-    },
-    {
-      id: 4,
-      name: "Sarah Ahmed",
-      title: "Python Data Scientist",
-      location: "Cairo, Egypt",
-      rating: 4.7,
-      reviewCount: 20,
-      hourlyRate: "$20/hr",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-      skills: ["Python", "Machine Learning", "Django", "PostgreSQL"],
-      sbtCount: 7,
-      description: "Data science graduate with expertise in machine learning and web development. Experienced in building data-driven applications and ML model deployment.",
-      verifiedSkills: ["Python", "Machine Learning", "Data Analysis"],
-      completedJobs: 18,
-      responseTime: "3 hours",
-      availability: "Available",
-      languages: ["English", "Arabic"]
-    },
-    {
-      id: 5,
-      name: "Raj Patel",
-      title: "Mobile App Developer",
-      location: "Mumbai, India",
-      rating: 4.6,
-      reviewCount: 25,
-      hourlyRate: "$18/hr",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
-      skills: ["React Native", "Flutter", "Firebase", "iOS"],
-      sbtCount: 4,
-      description: "Mobile development specialist with experience in cross-platform solutions. Built 20+ mobile apps with focus on performance and user experience.",
-      verifiedSkills: ["Mobile Development", "React Native", "App Store Optimization"],
-      completedJobs: 22,
-      responseTime: "1 hour",
-      availability: "Available",
-      languages: ["English", "Hindi"]
-    },
-    {
-      id: 6,
-      name: "Emma Johnson",
-      title: "DevOps Engineer",
-      location: "London, UK",
-      rating: 4.9,
-      reviewCount: 16,
-      hourlyRate: "$30/hr",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=150&h=150&fit=crop&crop=face",
-      skills: ["AWS", "Docker", "Kubernetes", "Terraform"],
-      sbtCount: 5,
-      description: "DevOps enthusiast with cloud certification. Specialized in infrastructure automation, CI/CD pipelines, and scalable cloud architectures.",
-      verifiedSkills: ["AWS", "DevOps", "Infrastructure"],
-      completedJobs: 14,
-      responseTime: "2 hours",
-      availability: "Available",
-      languages: ["English"]
     }
   ];
 
@@ -231,10 +174,6 @@ const Freelancers = () => {
                 {/* Stats Row */}
                 <div className="grid grid-cols-3 gap-4 mb-4 text-center">
                   <div>
-                    <div className="flex items-center justify-center space-x-1 mb-1">
-                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                      <span className="font-medium text-sm">{freelancer.rating}</span>
-                    </div>
                     <p className="text-xs text-gray-500">{freelancer.reviewCount} reviews</p>
                   </div>
                   <div>

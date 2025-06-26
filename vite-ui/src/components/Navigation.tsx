@@ -1,11 +1,23 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, User, Briefcase, Search } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { ConnectWallet } from "@/components/ConnectWallet";
+import { Menu, X, User, Briefcase, Search, Wallet } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import { mockUsers } from '@/lib/mockUsers';
+import { useUser } from '@/context/UserContext';
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { user, setUser } = useUser();
+  const navigate = useNavigate();
+
+  // Handler for user selection
+  const handleUserChange = (e) => {
+    const selected = mockUsers.find(u => u.id === e.target.value);
+    if (selected) {
+      setUser(selected);
+      navigate('/dashboard');
+    }
+  };
 
   return (
     <nav className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
@@ -47,9 +59,21 @@ const Navigation = () => {
             </Link>
           </div>
 
-          {/* Desktop CTA */}
+          {/* Desktop CTA + User Switcher */}
           <div className="hidden md:flex items-center space-x-4">
-            <ConnectWallet />
+            {/* User Switcher Dropdown */}
+            <div className="relative">
+              <select
+                className="border rounded px-2 py-1 text-sm bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-200 min-w-[140px]"
+                value={user ? user.id : ''}
+                onChange={handleUserChange}
+              >
+                <option value="">Select User</option>
+                {mockUsers.map(u => (
+                  <option key={u.id} value={u.id}>{u.name} ({u.role})</option>
+                ))}
+              </select>
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -91,8 +115,19 @@ const Navigation = () => {
               <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
                 About
               </Link>
-
-              <ConnectWallet />
+              {/* User Switcher Dropdown for Mobile */}
+              <div className="relative w-full">
+                <select
+                  className="border rounded px-2 py-2 text-sm bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-200 w-full"
+                  value={user ? user.id : ''}
+                  onChange={handleUserChange}
+                >
+                  <option value="">Select User</option>
+                  {mockUsers.map(u => (
+                    <option key={u.id} value={u.id}>{u.name} ({u.role})</option>
+                  ))}
+                </select>
+              </div>
             </div>
           </div>
         )}

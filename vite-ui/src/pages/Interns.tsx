@@ -20,7 +20,6 @@ const Interns = () => {
       title: "Computer Science Student",
       university: "Chulalongkorn University",
       location: "Bangkok, Thailand",
-      rating: 4.8,
       reviewCount: 12,
       availability: "Part-time",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=150&h=150&fit=crop&crop=face",
@@ -38,7 +37,6 @@ const Interns = () => {
       title: "Software Engineering Student",
       university: "Universidad Nacional Autónoma de México",
       location: "Mexico City, Mexico",
-      rating: 4.7,
       reviewCount: 8,
       availability: "Full-time",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
@@ -56,7 +54,6 @@ const Interns = () => {
       title: "Data Science Student",
       university: "Cairo University",
       location: "Cairo, Egypt",
-      rating: 4.9,
       reviewCount: 15,
       availability: "Part-time",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
@@ -74,7 +71,6 @@ const Interns = () => {
       title: "Computer Engineering Student",
       university: "National University of Singapore",
       location: "Singapore",
-      rating: 4.6,
       reviewCount: 10,
       availability: "Full-time",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
@@ -195,10 +191,6 @@ const Interns = () => {
                 {/* Stats Row */}
                 <div className="grid grid-cols-3 gap-4 mb-4 text-center">
                   <div>
-                    <div className="flex items-center justify-center space-x-1 mb-1">
-                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                      <span className="font-medium text-sm">{intern.rating}</span>
-                    </div>
                     <p className="text-xs text-gray-500">{intern.reviewCount} reviews</p>
                   </div>
                   <div>
