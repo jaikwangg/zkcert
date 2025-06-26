@@ -11,7 +11,7 @@ const Dashboard = () => {
   useEffect(() => {
     if (
         !user ||
-        user.role !== "Student" ||
+        (!["Student", "Intern"].includes(user.role)) ||
         user.gpa == 0||
         user.id == ""
       ) {

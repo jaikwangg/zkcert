@@ -17,8 +17,8 @@ export const mockUsers: MockUser[] = [
     id: "u2",
     name: "Bob",
     address: "0xMockBob456",
-    role: "Visitor",
-    gpa: 2.9,
+    role: "Intern",
+    gpa: 0,
     sbt: {
       name: "Diploma in Marketing",
       issuedBy: "Bangkok Business College",
@@ -29,7 +29,7 @@ export const mockUsers: MockUser[] = [
     id: "u3",
     name: "Carol",
     address: "0xMockCarol789",
-    role: "Student",
+    role: "Intern",
     gpa: 3.5,
     sbt: {
       name: "B.A. in Arts",
