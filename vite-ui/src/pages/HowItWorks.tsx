@@ -15,14 +15,13 @@ const HowItWorks = () => {
       <div className="bg-gradient-to-br from-blue-50 via-white to-purple-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            How Global Launchpad Works
+            How GradPad Works
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             The first Web3 platform that connects verified IT graduates with global opportunities through blockchain technology, secure payments, and AI-powered matching.
           </p>
         </div>
       </div>
-
       {/* For Graduates Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
