@@ -8,43 +8,34 @@ const FeaturedFreelancers = () => {
   const freelancers = [
     {
       id: 1,
-      name: "Alex Thompson",
       title: "Full Stack Developer",
       location: "Bangkok, Thailand",
-      rating: 4.9,
-      reviewCount: 23,
       hourlyRate: "$25/hr",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       skills: ["React", "Node.js", "TypeScript", "MongoDB"],
-      sbtCount: 5,
+      polCount: 127,
+      poeCount: 99,
       description: "Recent CS graduate with strong foundation in modern web technologies. Completed 15+ projects with 100% client satisfaction.",
       verifiedSkills: ["JavaScript", "React", "Database Design"]
     },
     {
       id: 2,
-      name: "Maria Rodriguez",
       title: "UI/UX Designer & Frontend Dev",
       location: "Mexico City, Mexico",
-      rating: 4.8,
-      reviewCount: 18,
       hourlyRate: "$22/hr",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=150&h=150&fit=crop&crop=face",
       skills: ["Figma", "React", "Tailwind CSS", "Design Systems"],
-      sbtCount: 4,
+      polCount: 100,
+      poeCount: 90,
       description: "Creative designer with coding skills. Specialized in creating beautiful, user-friendly interfaces backed by solid frontend development.",
       verifiedSkills: ["UI Design", "Frontend Development", "User Research"]
     },
     {
       id: 3,
-      name: "David Chen",
       title: "Blockchain Developer",
       location: "Singapore",
-      rating: 5.0,
-      reviewCount: 12,
       hourlyRate: "$35/hr",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       skills: ["Solidity", "Web3.js", "Smart Contracts", "DeFi"],
-      sbtCount: 6,
+      polCount: 106,
+      poeCount: 68,
       description: "Passionate blockchain developer with university certification in distributed systems. Built 8 DeFi applications from scratch.",
       verifiedSkills: ["Solidity", "Smart Contracts", "Ethereum"]
     }
@@ -67,17 +58,12 @@ const FeaturedFreelancers = () => {
                 {/* Profile Header */}
                 <div className="flex items-start space-x-4 mb-4">
                   <div className="relative">
-                    <img
-                      src={freelancer.avatar}
-                      alt={freelancer.name}
-                      className="w-16 h-16 rounded-full object-cover"
-                    />
+                    
                     <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
                       <Shield className="w-3 h-3 text-white" />
                     </div>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-gray-900 text-lg">{freelancer.name}</h3>
                     <p className="text-sm text-gray-600 mb-1">{freelancer.title}</p>
                     <div className="flex items-center space-x-1 text-sm text-gray-500">
                       <MapPin className="w-3 h-3" />
@@ -88,14 +74,19 @@ const FeaturedFreelancers = () => {
 
                 {/* Rating and SBTs */}
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center space-x-1">
-                    <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                    <span className="font-medium text-sm">{freelancer.rating}</span>
-                    <span className="text-sm text-gray-500">({freelancer.reviewCount} reviews)</span>
+                <div>
+                    <div className="flex items-center justify-center space-x-1 mb-1">
+                      <Shield className="w-4 h-4 text-gray-400" />
+                      <span className="font-medium text-sm text-gray-400">{freelancer.polCount}</span>
+                    </div>
+                    <p className="text-xs text-gray-500">POL</p>
                   </div>
-                  <div className="flex items-center space-x-1 text-sm text-blue-600">
-                    <Shield className="w-4 h-4" />
-                    <span className="font-medium">{freelancer.sbtCount} SBTs</span>
+                  <div>
+                    <div className="flex items-center justify-center space-x-1 mb-1">
+                      <Shield className="w-4 h-4 text-yellow-400" />
+                      <span className="font-medium text-sm text-yellow-400">{freelancer.poeCount}</span>
+                    </div>
+                    <p className="text-xs text-gray-500">POW</p>
                   </div>
                 </div>
 

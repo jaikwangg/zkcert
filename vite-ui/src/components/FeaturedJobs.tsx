@@ -14,7 +14,6 @@ const FeaturedJobs = () => {
       budget: "$2,500 - $4,000",
       duration: "2-3 months",
       skills: ["React", "TypeScript", "Tailwind CSS"],
-      rating: 4.9,
       description: "Looking for a skilled React developer to build a modern dashboard application with real-time features.",
       postedTime: "2 hours ago"
     },
@@ -26,7 +25,6 @@ const FeaturedJobs = () => {
       budget: "$3,000 - $5,500",
       duration: "1-2 months",
       skills: ["Solidity", "Web3.js", "Ethereum"],
-      rating: 4.8,
       description: "Seeking an experienced blockchain developer to create DeFi smart contracts with security best practices.",
       postedTime: "5 hours ago"
     },
@@ -38,7 +36,6 @@ const FeaturedJobs = () => {
       budget: "$2,000 - $3,500",
       duration: "3-4 months",
       skills: ["Python", "Django", "PostgreSQL"],
-      rating: 4.7,
       description: "Building a data analytics platform with Python backend and modern frontend integration.",
       postedTime: "1 day ago"
     }
@@ -62,10 +59,7 @@ const FeaturedJobs = () => {
                   <CardTitle className="text-xl font-semibold text-gray-900 line-clamp-2">
                     {job.title}
                   </CardTitle>
-                  <div className="flex items-center space-x-1 text-sm text-yellow-600">
-                    <Star className="w-4 h-4 fill-current" />
-                    <span>{job.rating}</span>
-                  </div>
+                  
                 </div>
                 <div className="text-sm text-gray-600 mb-3">
                   <p className="font-medium">{job.company}</p>
