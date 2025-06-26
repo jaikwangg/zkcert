@@ -14,7 +14,7 @@ const Footer = () => {
                 <span className="text-white font-bold text-sm">GL</span>
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Global Launchpad
+                GradPad
               </span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">

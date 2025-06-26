@@ -1,8 +1,8 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Wallet, Menu, X, Search, User, Briefcase } from 'lucide-react';
+import { Menu, X, User, Briefcase } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { ConnectWallet } from "@/components/ConnectWallet";
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ const Navigation = () => {
               <span className="text-white font-bold text-sm">GL</span>
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Global Launchpad
+              GradPad
             </span>
           </Link>
 
@@ -25,11 +25,18 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/jobs" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors">
               <Briefcase className="w-4 h-4" />
-              <span>Gradpad</span>
+              <span>jobs</span>
             </Link>
             <Link to="/freelancers" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors">
               <User className="w-4 h-4" />
-              <span>Gradpad</span>
+              <span>freelancers</span>
+            </Link>
+            <Link to="/interns" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors">
+              <User className="w-4 h-4" />
+              <span>interns</span>
+            </Link>
+            <Link to="/courses" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors">
+              <span>courses</span>
             </Link>
             <Link to="/how-it-works" className="text-gray-700 hover:text-blue-600 transition-colors">
               How It Works
@@ -41,10 +48,7 @@ const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="flex items-center space-x-2">
-              <Wallet className="w-4 h-4" />
-              <span>Connect Wallet</span>
-            </Button>
+            <ConnectWallet />
           </div>
 
           {/* Mobile menu button */}
@@ -53,6 +57,7 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </Button>
@@ -65,11 +70,19 @@ const Navigation = () => {
             <div className="flex flex-col space-y-4">
               <Link to="/jobs" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
                 <Briefcase className="w-4 h-4" />
-                <span>Gradpad</span>
+                <span>jobs</span>
               </Link>
               <Link to="/freelancers" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
                 <User className="w-4 h-4" />
-                <span>Gradpad</span>
+                <span>freelancers</span>
+              </Link>
+              <Link to="/interns" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+                <User className="w-4 h-4" />
+                <span>interns</span>
+              </Link>
+              <Link to="/courses" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+                <User className="w-4 h-4" />
+                <span>courses</span>
               </Link>
               <Link to="/how-it-works" className="text-gray-700 hover:text-blue-600 transition-colors">
                 How It Works
@@ -77,10 +90,8 @@ const Navigation = () => {
               <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
                 About
               </Link>
-              <Button className="flex items-center space-x-2 w-full justify-center mt-4">
-                <Wallet className="w-4 h-4" />
-                <span>Connect Wallet</span>
-              </Button>
+
+              <ConnectWallet />
             </div>
           </div>
         )}

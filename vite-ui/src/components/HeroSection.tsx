@@ -28,12 +28,12 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button size="lg" className="flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3">
               <Briefcase className="w-5 h-5" />
-              <span>Gradpad</span>
+              <span>Find Work</span>
               <ArrowRight className="w-4 h-4" />
             </Button>
             <Button size="lg" variant="outline" className="flex items-center space-x-2 px-8 py-3">
               <User className="w-5 h-5" />
-              <span>Gradpad</span>
+              <span>Find interns</span>
             </Button>
           </div>
 
