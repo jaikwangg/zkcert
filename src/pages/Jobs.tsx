@@ -138,7 +138,7 @@ const Jobs = () => {
                 <SelectValue placeholder="Skills" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Skills</SelectItem>
+                <SelectItem value="all">All Skills</SelectItem>
                 {skills.map((skill) => (
                   <SelectItem key={skill} value={skill}>{skill}</SelectItem>
                 ))}
@@ -149,7 +149,7 @@ const Jobs = () => {
                 <SelectValue placeholder="Budget Range" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">Any Budget</SelectItem>
+                <SelectItem value="all">Any Budget</SelectItem>
                 <SelectItem value="0-1000">$0 - $1,000</SelectItem>
                 <SelectItem value="1000-2500">$1,000 - $2,500</SelectItem>
                 <SelectItem value="2500-5000">$2,500 - $5,000</SelectItem>

@@ -162,7 +162,7 @@ const Freelancers = () => {
                 <SelectValue placeholder="Skills" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Skills</SelectItem>
+                <SelectItem value="all">All Skills</SelectItem>
                 {skills.map((skill) => (
                   <SelectItem key={skill} value={skill}>{skill}</SelectItem>
                 ))}
@@ -173,7 +173,7 @@ const Freelancers = () => {
                 <SelectValue placeholder="Location" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Locations</SelectItem>
+                <SelectItem value="all">All Locations</SelectItem>
                 <SelectItem value="asia">Asia</SelectItem>
                 <SelectItem value="europe">Europe</SelectItem>
                 <SelectItem value="americas">Americas</SelectItem>
