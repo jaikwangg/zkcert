@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, User, Briefcase, Search, Wallet } from 'lucide-react';
+import { Menu, X, User, Briefcase, Search } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { mockUsers } from '@/lib/mockUsers';
 import { useUser } from '@/context/UserContext';
@@ -26,7 +26,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">GL</span>
+              <span className="text-white font-bold text-sm">GP</span>
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               GradPad
