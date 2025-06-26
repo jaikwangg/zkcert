@@ -1,0 +1,12 @@
+import{c as r,u as c,r as a,j as e}from"./index-r4THE6q7.js";import{N as d,F as i}from"./Footer-DoIiTnuv.js";/**
+ * @license lucide-react v0.462.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const n=r("CircleCheck",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["path",{d:"m9 12 2 2 4-4",key:"dzmm74"}]]);/**
+ * @license lucide-react v0.462.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const x=r("CircleX",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["path",{d:"m15 9-6 6",key:"1uzhvr"}],["path",{d:"m9 9 6 6",key:"z0biqf"}]]),h=()=>{const{user:s}=c(),[l,t]=a.useState(!1);return a.useEffect(()=>{!s||!["Student","Intern"].includes(s.role)||s.gpa==0||s.id==""?t(!1):t(!0)},[s]),e.jsxs(e.Fragment,{children:[e.jsx(d,{}),e.jsx("div",{className:"min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-white py-12",children:e.jsx("div",{className:"max-w-2xl mx-auto",children:e.jsxs("div",{className:"bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl border border-gray-100 p-10",children:[e.jsx("div",{className:"flex flex-col md:flex-row items-center gap-8",children:e.jsxs("div",{children:[e.jsx("h1",{className:"text-4xl font-extrabold text-blue-700 mb-1",children:s==null?void 0:s.name}),e.jsx("span",{className:"inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold mb-2",children:s==null?void 0:s.role})]})}),e.jsxs("div",{className:"mt-8 grid grid-cols-1 md:grid-cols-2 gap-6",children:[e.jsxs("div",{className:"bg-blue-50 rounded-xl p-6 flex flex-col items-center shadow",children:[e.jsx("span",{className:"text-2xl font-bold text-blue-600",children:"GPA"}),e.jsx("span",{className:"text-4xl font-extrabold text-blue-800 mt-2",children:s==null?void 0:s.gpa})]}),e.jsx("div",{className:`rounded-xl p-6 flex flex-col items-center shadow
+              ${l?"bg-green-50":"bg-red-50"}`,children:l?e.jsxs(e.Fragment,{children:[e.jsx(n,{className:"w-10 h-10 text-green-500 mb-2"}),e.jsx("span",{className:"text-lg font-bold text-green-700",children:"Proof is valid"})]}):e.jsxs(e.Fragment,{children:[e.jsx(x,{className:"w-10 h-10 text-red-500 mb-2"}),e.jsx("span",{className:"text-lg font-bold text-red-700",children:"Proof is invalid"})]})})]})]})})}),e.jsx(i,{})]})};export{h as default};
